@@ -1,1 +1,68 @@
-
+{
+  "sites" : [
+    {
+      "name" :"YouTube",
+      "searchString":"*YouTube*",
+      "availableActions":[
+          {
+            "name": "playButton",
+            "domCmd": "document.getElementsByClassName('ytp-play-button')[0].click()",
+            "triggers":["play","stop","resume","pause"]
+          },
+          {
+            "name": "nextButton",
+            "domCmd": "document.getElementsByClassName('ytp-next-button')[0].click()",
+            "triggers":["next","next song","skip","play next"]
+          },
+          {
+            "name": "previousButton",
+            "domCmd": "document.getElementsByClassName('ytp-prev-button')[0].click()",
+            "triggers":["previous","previous song","before","play previous", "play again","start over","again"]
+          },
+          {
+            "name": "muteButton",
+            "domCmd": "document.getElementsByClassName('ytp-mute-button')[0].click()",
+            "triggers":["mute","unmute","volume up"]
+          }
+        ]
+    },
+    {
+      "name" :"Twitch",
+      "searchString":"*Twitch*",
+      "availableActions":[
+        {
+          "name": "playButton",
+          "domCmd": "document.getElementsByClassName('qa-pause-play-button')[0].click()",
+          "triggers":["play","stop","resume","pause"]
+        },
+        {
+          "name": "muteButton",
+          "domCmd": "document.getElementsByClassName('qa-control-volume')[0].click()",
+          "triggers":["mute","unmute","volume up"]
+        }
+      ]
+    },
+    {
+      "name" :"CurrentPage",
+      "searchString":"currpg",
+      "availableActions":[
+        {
+          "name": "refresh",
+          "domCmd": "location.reload();",
+          "triggers":["refresh", "refresh page", "reload", "reload page"]
+        }
+      ]
+    },
+    {
+      "name" :"All pages",
+      "searchString":"*",
+      "availableActions":[
+        {
+          "name": "refresh",
+          "domCmd": "location.reload();",
+          "triggers":["refresh all", "refresh pages", "reload all", "reload pages"]
+        }
+      ]
+    }
+  ]
+}
