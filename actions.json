@@ -43,6 +43,32 @@
       ]
     },
     {
+      "name" :"Netflix",
+      "searchString":"*Netflix*",
+      "availableActions":[
+        {
+          "name": "playButton",
+          "domCmd": "document.getElementsByClassName('button-nfplayerPlay')[0].click()",
+          "triggers":["play","resume","watch"]
+        },
+        {
+          "name": "pauseButton",
+          "domCmd": "document.getElementsByClassName('button-nfplayerPause')[0].click()",
+          "triggers":["pause","stop","stop playing"]
+        },
+        {
+          "name": "nextEpisodeButton",
+          "domCmd": "document.getElementsByClassName('button-nfplayerNextEpisode')[0].click()",
+          "triggers":["next","next episode","play next"]
+        },
+        {
+        	"name": "skipIntro",
+        	"doCmd": "document.getElementsByClassName('nf-flat-button-text')[0].click()",
+        	"triggers":["skip  intro", "skip introduction", "skip"]
+        }
+      ]
+    },
+    {
       "name" :"CurrentPage",
       "searchString":"currpg",
       "availableActions":[
