@@ -62,9 +62,9 @@
           "triggers":["next","next episode","play next"]
         },
         {
-        	"name": "skipIntro",
-        	"doCmd": "document.getElementsByClassName('nf-flat-button-text')[0].click()",
-        	"triggers":["skip  intro", "skip introduction", "skip"]
+          "name": "skipIntro",
+          "doCmd": "document.getElementsByClassName('skip-credits')[0].children[0].click()",
+          "triggers":["skip  intro", "skip introduction", "skip"]
         }
       ]
     },
