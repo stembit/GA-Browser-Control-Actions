@@ -63,7 +63,7 @@
         },
         {
           "name": "skipIntro",
-          "doCmd": "document.getElementsByClassName('skip-credits')[0].children[0].click()",
+          "domCmd": "document.getElementsByClassName('skip-credits')[0].children[0].click()",
           "triggers":["skip intro", "skip introduction", "skip", "skip credits"]
         }
       ]
