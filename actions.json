@@ -39,6 +39,11 @@
           "name": "muteButton",
           "domCmd": "document.getElementsByClassName('qa-control-volume')[0].click()",
           "triggers":["mute","unmute","volume up"]
+        },
+        {
+          "name": "fullScreenButton",
+          "domCmd": "document.getElementsByClassName('qa-fullscreen-button')[0].click()",
+          "triggers":["fullscreen","full screen","f11", "f 11"]
         }
       ]
     },
