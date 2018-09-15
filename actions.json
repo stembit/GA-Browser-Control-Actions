@@ -7,7 +7,7 @@
           {
             "name": "playButton",
             "domCmd": "document.getElementsByClassName('ytp-play-button')[0].click()",
-            "triggers":["play","stop","resume","pause"]
+            "triggers":["play","stop","resume","pause", "staff"]
           },
           {
             "name": "nextButton",
@@ -22,7 +22,7 @@
           {
             "name": "muteButton",
             "domCmd": "document.getElementsByClassName('ytp-mute-button')[0].click()",
-            "triggers":["mute","unmute","volume up"]
+            "triggers":["mute","unmute","volume up", "nude", "rude"]
           }
         ]
     },
@@ -33,12 +33,12 @@
         {
           "name": "playButton",
           "domCmd": "document.getElementsByClassName('qa-pause-play-button')[0].click()",
-          "triggers":["play","stop","resume","pause"]
+          "triggers":["play","stop","resume","pause", "staff"]
         },
         {
           "name": "muteButton",
           "domCmd": "document.getElementsByClassName('qa-control-volume')[0].click()",
-          "triggers":["mute","unmute","volume up"]
+          "triggers":["mute","unmute","volume up", "nude", "rude"]
         }
       ]
     },
