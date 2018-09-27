@@ -7,7 +7,7 @@
           {
             "name": "playButton",
             "domCmd": "document.getElementsByClassName('ytp-play-button')[0].click()",
-            "triggers":["play","stop","resume","pause", "staff"]
+            "triggers":["play","stop","resume","pause", "staff", "start"]
           },
           {
             "name": "nextButton",
